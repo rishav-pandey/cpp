@@ -7,6 +7,7 @@ int main()
   cout<<i<<" "<<j<<endl;
   j=++i;
   cout<<i<<" "<<j<<endl;
-
-return 0;
+  j=2*i++ +2 + 2*++i;
+  cout<<j;
+  return 0;
 }
