@@ -6,11 +6,11 @@ int main()
    int net_sal;
    cout<<"Enter basic salary"<<endl;
    cin>>basic_salary;
-   cout<<"Enter percentage allowence"<<endl;
+   cout<<"Enter percentage allowence "<<endl;
    cin>>perc_allow;
    cout<<"Enter percentage of deduction"<<endl;
    cin>>perc_dedu;
-   net_sal=basic_salary+basic_salary*perc_allow-basic_salary*perc_dedu;
+   net_sal=basic_salary+(basic_salary*perc_allow/100)-(basic_salary*perc_dedu/100);
    cout<<"Net salary is "<<net_sal;
 return 0;
 }
